@@ -950,7 +950,7 @@ button:hover {
             </div>
           </div>
         `;
-        container.appendChild(card);
+        container.prepend(card);
       });
     }
 
@@ -985,7 +985,7 @@ button:hover {
               <button onclick="hideEditForm('${key}')">إلغاء</button>
             </div>
           `;
-          container.appendChild(card);
+          container.prepend(card);
         });
       });
     }
@@ -1188,7 +1188,7 @@ button:hover {
               </div>
             </td>
           `;
-          table.appendChild(row);
+          table.prepend(row);
         });
       });
     }
@@ -1266,7 +1266,7 @@ button:hover {
             <td>${report.amount}</td>
             <td>${report.date}</td>
           `;
-          table.appendChild(row);
+          table.prepend(row);
         });
       });
     }
@@ -1343,7 +1343,7 @@ button:hover {
             <td>${dateStr}</td>
             <td><button onclick="deleteMessage('${msg.key}')">حذف</button></td>
           `;
-          table.appendChild(row);
+          table.prepend(row);
         });
       });
     }
